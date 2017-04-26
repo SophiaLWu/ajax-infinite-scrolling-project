@@ -2,6 +2,14 @@ body {
   text-align: center;
 }
 
+header {
+  margin-bottom: 10px;
+}
+
+#search-form {
+  margin-bottom: 30px;
+}
+
 .movie {
   width: 300px;
   margin: 0 auto;
