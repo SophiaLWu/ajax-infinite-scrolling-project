@@ -12,9 +12,14 @@
       <h1>Infinite Movie Scroller</h1>
     </header>
     <form id="search-form">
-      <label for="movie-title">Movie Title</label>
-      <input type="text" name="s" id="movie-title">
-      <input type="submit" value="Search">
+      <fieldset>
+        <legend>Search by:</legend> 
+        <label for="movie-title">Title</label>
+        <input type="text" name="s" id="movie-title">
+        <label for="movie-year">Year</label>
+        <input type="text" name="y" id="movie-year">
+        <input type="submit" value="Search">
+      </fieldset>
     </form>
     <div class="movies-container"></div>
     <div class="loading"></div>

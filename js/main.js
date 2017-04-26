@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   var searchMovies = function() {
     query = $("#search-form").serialize();
-    getMovies(page, query)
+    getMovies(page, query);
   };
 
   var getMovies = function(page, query) {
