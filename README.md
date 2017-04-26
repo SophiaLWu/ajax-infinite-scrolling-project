@@ -1,6 +1,6 @@
 # Ajax Infinite Scrolling Project
 This is an infinite scrolling page of movies from the [OMDb](http://www.omdbapi.com/) movie database using Ajax.
 
-[See website.](
+[See website.](https://sophialwu.github.io/ajax-infinite-scrolling-project/)
 
 This is a project as described in [The Odin Project](http://www.theodinproject.com/courses/javascript-and-jquery/lessons/infinite-scroll-and-submitting-a-form-with-ajax).
