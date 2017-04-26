@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.title {
+  font-weight: bold;
+}
