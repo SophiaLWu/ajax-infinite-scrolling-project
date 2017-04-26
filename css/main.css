@@ -1,30 +1,30 @@
 body {
   background: #eae0d0;
   text-align: center;
+  font-family: 'Exo', sans-serif;
 }
 
 header {
   margin-bottom: 10px;
 }
 
-a, 
-a:visited {
-  color: #000;
-}
-
-a:hover {
-  cursor: pointer;
-  color: gray;
-}
-
 h1 {
-  font-size: 40px;
+  font-size: 60px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 #search-form {
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+#search-form input {
+  margin-right: 20px;
 }
 
 #search-form legend {
@@ -32,15 +32,21 @@ h1 {
 }
 
 .movie {
-  width: 400px;
+  width: 300px;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 15px;
   border: 1px solid black;
   background: #fff;
 }
 
+.movie img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 .title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 26px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Infinite Scrolling</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
   </head>
   <body>
     <script src="js/jquery-3.2.0.min.js"></script>
@@ -14,8 +15,8 @@
     <form id="search-form">
       <fieldset>
         <legend>Search by:</legend> 
-        <label for="movie-title">Title</label>
-        <input type="text" name="s" id="movie-title">
+        <label for="movie-title">Title (required)</label>
+        <input type="text" name="s" id="movie-title" required>
         <label for="movie-year">Year</label>
         <input type="text" name="y" id="movie-year">
         <input type="submit" value="Search">

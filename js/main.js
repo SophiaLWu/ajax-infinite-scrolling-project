@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   var getMovies = function(page, query) {
     $.ajax({
-      url: "http://www.omdbapi.com/?" + query + "&page=" + page,
+      url: "https://www.omdbapi.com/?" + query + "&page=" + page,
       type: "GET", 
       dataType: "json",
       beforeSend: function() {
@@ -25,7 +25,7 @@ $(document).ready(function() {
         if (moviesLeft) addMovies(movies);
       },
       error: function(xhr) {
-        alert("Error occured.please try again");
+        alert("Error occured. Please try again");
         $(".loading").text(xhr.statusText + xhr.responseText);
         $(".loading").text();
       },
@@ -49,8 +49,8 @@ $(document).ready(function() {
       } else {
         noMovies = false;
         $(".movies-container").append("<div class='movie'>" +
-                                      "<p class='title'><a href=" + 
-                                      movie.Poster + ">" + movie.Title + 
+                                      "<img src=" + movie.Poster + ">" +
+                                      "<p class='title'>" + movie.Title + 
                                       "</a></p>" + "<p>" + movie.Year 
                                       + "</p></div>");
       }
