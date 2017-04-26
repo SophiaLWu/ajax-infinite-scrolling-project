@@ -5,6 +5,7 @@ $(document).ready(function() {
   var numberMovies = 10;
   var moviesLeft = true;
   var query = "";
+  var noMovies = true;
 
   var searchMovies = function() {
     query = $("#search-form").serialize();
@@ -31,6 +32,8 @@ $(document).ready(function() {
       complete: function() {
         if (moviesLeft) {
           $(".loading").text();
+        } else if (noMovies) {
+          $(".loading").text("No movies found.");
         } else {
           $(".loading").text("No movies left.");
         }
@@ -44,9 +47,12 @@ $(document).ready(function() {
       if (movie === undefined) {
         $(".loading").text("No movies left.");
       } else {
+        noMovies = false;
         $(".movies-container").append("<div class='movie'>" +
-                                      "<p class='title'>" + movie.Title + "</p>" +
-                                      "<p>" + movie.Year + "</p></div>");
+                                      "<p class='title'><a href=" + 
+                                      movie.Poster + ">" + movie.Title + 
+                                      "</a></p>" + "<p>" + movie.Year 
+                                      + "</p></div>");
       }
     }
     numberMovies += 10;
@@ -55,6 +61,7 @@ $(document).ready(function() {
 
   $("#search-form").submit(function(event) {
     event.preventDefault();
+    noMovies = true;
     $(".movies-container").empty();
     page = 1;
     numberMovies = 10;
